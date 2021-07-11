@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.main-container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #48dbfb;
+    display: grid;
+    place-items: center;
+}
+
+.main-container .container {
+    min-width: 16rem;
+    width: 50%;
+    padding: 2rem 2rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    box-shadow: 0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.4);
+}
+
+.container h2{
+    margin-bottom: 1rem;
+}
+
+.container li{
+    list-style: none;
+    line-height: 1.8rem;
+}
+
+.btn-container{
+    display: grid;
+    place-items: center;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+    background-color:#5f27cd;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in;
+    display: block;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: #410077;
+}
+
+#showScore {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-radius: 0.3rem;
+    background-color: #0A1931;
+    box-shadow: 0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.4);
+    /* display: grid; */
+    place-items: center;
+}
+
+
+.playAgain{
+    background-color: #FFC947;
+    color: #101010;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.playAgain:hover{
+    background-color: #ff9f43;
+
+}
+
+.scoreArea{
+    display: none;
+}
+
+.score-text{
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width:480px) {
+    .main-container .container{
+        width: 80%; 
+    }
+}
